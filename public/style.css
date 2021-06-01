@@ -1,0 +1,47 @@
+.outer::before{
+    content: "";
+    background: url("https://i.pinimg.com/originals/e8/d9/4e/e8d94e1e8b6b530ad315e9385290141b.jpg") no-repeat center center/cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: -1;
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.outer{
+    
+    color: white;
+}
+#textarea{
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    color: white;
+}
+li{
+    border: none;
+}
+#typing{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+}
+
+
+.comment{
+    animation: move 600ms ease forwards;
+}
+
+@keyframes move {
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
